@@ -1,0 +1,38 @@
+# Class-and-object-instance-
+coding:
+class Car {
+    String make;
+    String model;
+    int year;
+    Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    void displayCarDetails() {
+        System.out.println("Car Make: " + make);
+        System.out.println("Car Model: " + model);
+        System.out.println("Car Year: " + year);
+    }
+}
+public class CarExample {
+    public static void main(String[] args) {
+        Car car1 = new Car("Toyota", "Corolla", 2020);
+        Car car2 = new Car("Honda", "Civic", 2022);
+        System.out.println("Details of car1:");
+        car1.displayCarDetails();
+        System.out.println("\nDetails of car2:");
+        car2.displayCarDetails();
+    }
+}
+
+output:
+Details of car1:
+Car Make: Toyota
+Car Model: Corolla
+Car Year: 2020
+
+Details of car2:
+Car Make: Honda
+Car Model: Civic
+Car Year: 2022
